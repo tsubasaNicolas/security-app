@@ -7,7 +7,7 @@ import swaggerUI from "swagger-ui-express";
 import { options } from "./swaggerOptions";
 const specs = swaggerJSDoc(options);
 
-import controlCierreRoutes from "./routes/controlcierre";
+import controlCierreRoutes from "./routes/controlCierre";
 import controlIngresoRoutes from "./routes/controlIngreso";
 import tasksRoutes from "./routes/tasks";
 import localesRoutes from "./routes/locales";
