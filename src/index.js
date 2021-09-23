@@ -1,7 +1,4 @@
 import app from "./app";
-//algo par commit
-
-const app = require(path.join(__dirname, "./app"));
 
 const port = 4000;
 
