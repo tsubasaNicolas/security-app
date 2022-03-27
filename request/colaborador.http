@@ -1,6 +1,8 @@
 //@api=http://127.0.0.1:3000/tasks
 //@api=http://159.89.91.39:3000/tasks
-@api=http://127.0.0.1:4000/colaboradores
+//@api=http://127.0.0.1:4000/colaboradores
+
+@api = https://nicolas-security.herokuapp.com/colaboradores
 
 
 GET {{api}} HTTP/1.1
@@ -17,20 +19,20 @@ POST {{api}}
 Content-Type: application/json
 
 {
-    "nombre": "Carlos luengo",
-    "telefono": 5954620265
+    "nombre": "Franela",
+    "telefono": 597777777
 }
 
 ###
-DELETE {{api}}/4
+DELETE {{api}}/19
 
 ###
 
-PUT {{api}}/1
+PUT {{api}}/10
 Content-Type: application/json
 
 {
-    "nombre": "Juan Esteban",
+    "nombre": "Beto a Saber",
     "telefono": 56977041571
 }
 

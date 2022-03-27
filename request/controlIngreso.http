@@ -1,6 +1,8 @@
 //@api=http://127.0.0.1:3000/tasks
 //@api=http://159.89.91.39:3000/tasks
-@api=http://127.0.0.1:4000/ingreso
+//@api=http://127.0.0.1:4000/ingreso
+
+@api=https://nicolas-security.herokuapp.com/ingreso
 
 
 GET {{api}} HTTP/1.1
@@ -25,11 +27,15 @@ POST {{api}}
 Content-Type: application/json
 
 {
-    "id_colaborador": 9,
-    "ingreso":0,
-    "estado":"Descanso",
-    "fecha_hora":null
+   "id_colaborador": 16,
+  "ingreso": 1,
+  "estado": "Descanso",
+  "fecha_hora": null
 }
+
+
+ 
+  
 
 ###
 DELETE {{api}}/1

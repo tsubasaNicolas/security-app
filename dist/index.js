@@ -4,7 +4,7 @@ var _app = _interopRequireDefault(require("./app"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var port = 4000;
+var port = process.env.PORT || 4000;
 
 _app["default"].get("/", function (req, res) {
   res.send("Hello World!");

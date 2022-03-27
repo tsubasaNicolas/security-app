@@ -2,8 +2,18 @@
 //@api=http://159.89.91.39:3000/tasks
 @api=http://127.0.0.1:4000/locales
 
+//@api = https://nicolas-security.herokuapp.com/locales
+
 
 GET {{api}} HTTP/1.1
+
+###
+
+@apiimagenes = http://127.0.0.1:4000/imagenes
+
+
+
+GET {{apiimagenes}} HTTP/1.1
 
 ###
  
@@ -25,17 +35,18 @@ Content-Type: application/json
 }
 
 ###
-DELETE {{api}}/1
+DELETE {{api}}/55
 
 ###
 
-PUT {{api}}/2
+PUT {{api}}/55
 Content-Type: application/json
 
 {
-    "local": "Starbucks 2",
-    "encargado": "Juan Cuidador 2",
-    "telefono": 56977041571,
-    "ubicacion": "Sector norte, segundo piso."
+     "local": "Botillería B",
+    "encargado": "Baltazar",
+    "telefono": 56962506125,
+    "ubicacion": "Esquina Sur",
+    "estado":"abierto"
 }
 

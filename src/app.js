@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 import morgan from "morgan";
 
 import swaggerJSDoc from "swagger-jsdoc";
@@ -13,8 +14,10 @@ import tasksRoutes from "./routes/tasks";
 import localesRoutes from "./routes/locales";
 import colaboradoresRoutes from "./routes/colaboradores";
 
-const app = express();
+import imagenesRoutes from "./routes/imagenes";
 
+const app = express();
+app.use(express.static(path.join(__dirname, "dbimages")));
 app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
@@ -25,6 +28,7 @@ app.use([
   colaboradoresRoutes,
   controlIngresoRoutes,
   controlCierreRoutes,
+  imagenesRoutes,
 ]);
 
 app.use("/docs", swaggerUI.serve, swaggerUI.setup(specs));
